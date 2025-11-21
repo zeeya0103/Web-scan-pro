@@ -21,6 +21,6 @@ class AuthTester:
         r = s.get(self.url)
         print("[*] Session Cookie:", s.cookies)
 
-auth = AuthTester("http://localhost/dvwa/login.php")
+auth = AuthTester("http://localhost/login.php")
 auth.brute_force()
 auth.session_test()

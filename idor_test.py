@@ -11,5 +11,5 @@ class IDORTester:
             if "Unauthorized" not in r.text:
                 print("[!] IDOR Possible – User:", uid)
 
-idor = IDORTester("http://localhost/dvwa/vulnerabilities/idor/")
+idor = IDORTester("http://localhost/vulnerabilities/idor/")
 idor.test_idor()

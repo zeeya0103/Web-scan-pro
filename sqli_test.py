@@ -18,5 +18,5 @@ class SQLInjectionTester:
                 except:
                     pass
 
-tester = SQLInjectionTester(["http://localhost/dvwa/vulnerabilities/sqli/"])
+tester = SQLInjectionTester(["http://localhost/vulnerabilities/sqli/"])
 tester.test_sql()

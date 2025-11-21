@@ -12,7 +12,7 @@ def main():
 
     # 1️⃣ AUTHENTICATION TEST
     print("\n--- AUTH TEST ---")
-    tester = AuthTester("http://localhost/dvwa/login.php")
+    tester = AuthTester("http://localhost/login.php")
     tester.brute_force()
     tester.session_test()
 
@@ -23,17 +23,17 @@ def main():
 
     # 3️⃣ SQL INJECTION TEST
     print("\n--- SQL INJECTION TEST ---")
-    sql_tester = SQLInjectionTester(["http://localhost/dvwa/vulnerabilities/sqli/"])
+    sql_tester = SQLInjectionTester(["http://localhost/vulnerabilities/sqli/"])
     sql_results = sql_tester.test_sql()
 
     # 4️⃣ XSS TEST
     print("\n--- XSS TEST ---")
-    xss_tester = XSSTester("http://localhost/dvwa/vulnerabilities/xss_r/")
+    xss_tester = XSSTester("http://localhost/vulnerabilities/xss_r/")
     xss_results = xss_tester.test_xss()
 
     # 5️⃣ IDOR TEST
     print("\n--- IDOR TEST ---")
-    idor = IDORTester("http://localhost/dvwa/vulnerabilities/idor/")
+    idor = IDORTester("http://localhost/vulnerabilities/idor/")
     idor_results = idor.test_idor()
 
     # 6️⃣ GENERATE REPORT

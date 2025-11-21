@@ -31,7 +31,7 @@ class Crawler:
 
 # ✅ New function to be imported in app.py
 def run_crawler():
-    base = "http://localhost/dvwa/"
+    base = "http://localhost/"
     c = Crawler(base)
     c.crawl()
     return c.links
